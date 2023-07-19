@@ -4,8 +4,8 @@ license='MIT'
 
 [[mods]]
 modId="pymod" #mandatory
-entryClass="examplemod.mymod"
-version="${file.jarVersion}" #mandatory
+entryClass="examplemod"
+version="1.0" #mandatory
 displayName="pymod" #mandatory
 credits="Example mod using the Python language provider."
 authors="Rickaym" #optional
