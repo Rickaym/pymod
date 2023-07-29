@@ -1,29 +1,29 @@
 modLoader="pyminecraft"
-loaderVersion="[1,)"
+loaderVersion="(,1.0)"
 license='MIT'
 
 [[mods]]
-modId="pymod" #mandatory
-entryClass="examplemod"
-version="1.0" #mandatory
-displayName="pymod" #mandatory
-credits="Example mod using the Python language provider."
-authors="Rickaym" #optional
-description='''
-Discord Integration ~
-:: Complete GUI
-:: Currently allows WebHook interactions'''
+    modId="pymod" #mandatory
+    entryClass="pymod"
+    version="1.0" #mandatory
+    displayName="pymod" #mandatory
+    credits="Example mod using the Python language provider."
+    authors="Rickaym" #optional
+    description='''
+    Discord Integration ~
+    :: Complete GUI
+    :: Currently allows WebHook interactions'''
 
 [[dependencies.pymod]]
-modId="forge" #mandatory
-mandatory=true #mandatory
-versionRange="[36,)" #mandatory
-ordering="NONE"
-side="BOTH"
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[36,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.pymod]]
-modId="minecraft"
-mandatory=true
-versionRange="[1.16.5,1.17)"
-ordering="NONE"
-side="BOTH"
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
