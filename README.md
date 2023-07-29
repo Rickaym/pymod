@@ -1,0 +1,1 @@
+Example implementation of a Forge mod using [pyforge](https://github.com/Rickaym/pyforge).
