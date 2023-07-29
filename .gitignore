@@ -21,6 +21,7 @@ build
 eclipse
 run
 *py.class
+.jython_cache
 
 # Files from Forge MDK
 forge*changelog.txt
