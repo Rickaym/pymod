@@ -1,10 +1,8 @@
-import sys
-
-sys.path.append("D:\\Programming\\Python\\Projects\\pyminecraft\\build\\libs\\pyminecraft-1.0.jar")
-
 from rickaym.pyminecraft import Mod
 
-from extension import ExtensionClass, SecondExtensionClass
+import org.apache.logging.log4j.LogManager as LogManager
+
+from ext import ExtensionClass, SecondExtensionClass
 from more_ext import MoreExt
 
 @Mod(mod_id="abc")
@@ -20,7 +18,8 @@ class MyMod:
     """
 
     def __init__(self):
-        pass
+        self.LOGGER = LogManager.getLogger()
+        self.LOGGER.info("Pymod has been loaded in!")
 
     def register(self):
         """
