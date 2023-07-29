@@ -127,8 +127,8 @@ dependencies {
     // https://mvnrepository.com/artifact/org.python/jython-standalone
     implementation 'org.python:jython-standalone:2.7.2'
 
-    // Temporary fix for depending on pyminecraft
-    implementation files('D:\\Programming\\Python\\Projects\\pyminecraft\\build\\libs\\pyforge-0.0.2.jar')
+    // Temporary fix for depending on pyforge
+    implementation files('D:\\Programming\\Python\\Projects\\pyforge\\build\\libs\\pyforge-0.0.2.jar')
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"

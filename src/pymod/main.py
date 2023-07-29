@@ -1,4 +1,4 @@
-from rickaym.pyminecraft import Mod
+from rickaym.pyforge import Mod
 
 import org.apache.logging.log4j.LogManager as LogManager
 
