@@ -1,11 +1,11 @@
-from rickaym.pyforge import Mod
-
+import rickaym.pyforge.Mod as Mod
+import rickaym.pyforge.PyModLoadingContext as PyModLoadingContext
 import org.apache.logging.log4j.LogManager as LogManager
+import constants
 
-from ext import ExtensionClass, SecondExtensionClass
-from more_ext import MoreExt
+from mod_items import ModItems, ModBlocks
 
-@Mod(mod_id="abc")
+@Mod(mod_id=constants.MOD_ID)
 class MyMod:
     """
     Exemplary implementation of the Mod class.
@@ -21,11 +21,6 @@ class MyMod:
         self.LOGGER = LogManager.getLogger()
         self.LOGGER.info("Pymod has been loaded in!")
 
-    def register(self):
-        """
-        Method to register things into appropriate registries
-        """
-        print "Main register called."
-        ExtensionClass.register()
-        SecondExtensionClass.register()
-        MoreExt.register()
+        eventBus = PyModLoadingContext.get().getModEventBus()
+        ModItems.register(eventBus)
+        ModBlocks.register(eventBus)

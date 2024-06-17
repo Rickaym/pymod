@@ -10,9 +10,8 @@ license='MIT'
     credits="Example mod using the Python language provider."
     authors="Rickaym" #optional
     description='''
-    Discord Integration ~
-    :: Complete GUI
-    :: Currently allows WebHook interactions'''
+    Mod written completely in Python 2.7 and built with Gradle!
+    '''
 
 [[dependencies.pymod]]
     modId="forge" #mandatory
